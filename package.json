@@ -2,11 +2,15 @@
   "name": "@fisand/mand-mobile",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.mjs",
+  "module": "dist/index.mjs",
   "scripts": {
     "build": "unbuild && tsx scripts/afterBuild",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
