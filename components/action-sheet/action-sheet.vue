@@ -15,9 +15,9 @@
             <li
               :key="index"
               :class="{
-                'active': index === clickIndex,
-                'disabled': index=== invalidIndex,
-                'md-action-sheet-item': true
+                active: index === clickIndex,
+                disabled: index === invalidIndex,
+                'md-action-sheet-item': true,
               }"
               @click="$_onSelect(item, index)"
             >
@@ -33,9 +33,10 @@
   </div>
 </template>
 
-<script>import Popup from '../popup'
-import {inArray} from '../_util'
-import {t} from '../_locale'
+<script>
+import Popup from '../popup/index.vue'
+import { inArray } from '../_util'
+import { t } from '../_locale'
 
 export default {
   name: 'md-action-sheet',
@@ -118,7 +119,7 @@ export default {
     },
   },
 }
-</script>
+</script>
 
 <style lang="stylus">
 .md-action-sheet

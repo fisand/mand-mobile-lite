@@ -1,6 +1,6 @@
 {
-  "name": "mand-mobile",
-  "version": "1.0.0",
+  "name": "@fisand/mand-mobile",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {

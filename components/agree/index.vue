@@ -23,7 +23,8 @@
   </div>
 </template>
 
-<script>import Icon from '../icon'
+<script>
+import Icon from '../icon/index.vue'
 export default {
   name: 'md-agree',
 
@@ -61,7 +62,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-agree

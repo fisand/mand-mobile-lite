@@ -81,7 +81,8 @@
   </div>
 </template>
 
-<script>import NumberKeyboard from '../number-keyboard'
+<script>
+import NumberKeyboard from '../number-keyboard/index.vue'
 
 export default {
   name: 'md-codebox',
@@ -246,7 +247,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-codebox-wrapper
