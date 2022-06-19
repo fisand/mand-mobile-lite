@@ -1,5 +1,6 @@
 <div align="center"><img width="80" src="https://pt-starimg.didistatic.com/static/starimg/img/BSHOVw2pyT1620726744938.png" alt="LOGO"></div>
 <h2 align="center">无构建的 mand-mobile</h2>
+<p align="center">fork from https://github.com/didi/mand-mobile</p>
 <p align="center">面向金融场景的移动端UI组件库，基于Vue.js实现</p>
 <p align="center">
   <a href="https://travis-ci.org/didi/mand-mobile"><img src="https://img.shields.io/travis/didi/mand-mobile/master.svg?style=flat-square" alt="Build Status"></a>

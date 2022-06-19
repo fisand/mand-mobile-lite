@@ -1,5 +1,6 @@
 <p align="center"><img width="80" src="https://pt-starimg.didistatic.com/static/starimg/img/BSHOVw2pyT1620726744938.png" alt="LOGO"></p>
 <h2 align="center">Bundleless mand-mobile</h2>
+<p align="center">fork from https://github.com/didi/mand-mobile</p>
 <p align="center">A mobile UI toolkit, based on Vue.js 2, designed for financial scenarios</p>
 <p align="center">
   <a href="https://travis-ci.org/didi/mand-mobile"><img src="https://img.shields.io/travis/didi/mand-mobile/master.svg?style=flat-square" alt="Build Status"></a>
