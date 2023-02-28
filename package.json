@@ -6,7 +6,8 @@
   "module": "dist/index.mjs",
   "scripts": {
     "dev": "vite dev",
-    "build": "unbuild && tsx scripts/afterBuild",
+    "build": "vite build",
+    "build:lib": "unbuild && tsx scripts/afterBuild",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
