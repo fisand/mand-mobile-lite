@@ -29,6 +29,7 @@
 
 ## Preview
 
+大陆访问[演示](https://merry-salamander-2a71c3.netlify.app/)
 You can scan the following QR code to access the examples:
 
 <img src="https://manhattan.didistatic.com/static/manhattan/mand-mobile/2.0/docs/mand-doc-home-qrcode.png" alt="Mand Mobile Examples" width="200"/>
