@@ -44,8 +44,9 @@
   </div>
 </template>
 
-<script>import Popup from '../popup'
-import RadioList from '../radio-list'
+<script>
+import Popup from '../popup/index.vue'
+import RadioList from '../radio-list/index.vue'
 import {traverse, compareObjects} from '../_util'
 
 export default {
@@ -193,7 +194,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-drop-menu
@@ -255,5 +257,5 @@ export default {
     font-weight font-weight-normal
     &.is-selected .md-cell-item-title
       color color-primary
-      
+
 </style>

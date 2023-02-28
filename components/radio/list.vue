@@ -47,10 +47,11 @@
   </div>
 </template>
 
-<script>import Radio from './index'
-import Field from '../field'
-import CellItem from '../cell-item'
-import InputItem from '../input-item'
+<script>
+import Radio from './index.vue'
+import Field from '../field/index.vue'
+import CellItem from '../cell-item/index.vue'
+import InputItem from '../input-item/index.vue'
 import radioMixin from './mixins'
 
 export default {
@@ -179,7 +180,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-radio-item

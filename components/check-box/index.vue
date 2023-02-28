@@ -1,3 +1,4 @@
-<script>import CheckBox from '../check/box'
+<script>
+import CheckBox from '../check/box.vue'
 export default CheckBox
-</script>
+</script>

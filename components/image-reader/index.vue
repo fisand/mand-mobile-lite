@@ -12,7 +12,8 @@
   </div>
 </template>
 
-<script>import createImageReader from './image-reader'
+<script>
+import createImageReader from './image-reader'
 import {dataURItoBlob} from './image-dataurl'
 import {functionToUrl, randomId} from '../_util'
 
@@ -175,7 +176,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-image-reader

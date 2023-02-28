@@ -78,9 +78,10 @@
   </div>
 </template>
 
-<script>import Dialog from '../dialog'
-import Codebox from '../codebox'
-import Button from '../button'
+<script>
+import Dialog from '../dialog/dialog.vue'
+import Codebox from '../codebox/index.vue'
+import Button from '../button/index.vue'
 import {mdDocument} from '../_util'
 import {t} from '../_locale'
 
@@ -254,7 +255,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-captcha

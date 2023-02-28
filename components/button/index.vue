@@ -27,8 +27,9 @@
   </button>
 </template>
 
-<script>import ActivityIndicatorRolling from '../activity-indicator/roller'
-import Icon from '../icon'
+<script>
+import ActivityIndicatorRolling from '../activity-indicator/roller.vue'
+import Icon from '../icon/index.vue'
 export default {
   name: 'md-button',
 
@@ -80,7 +81,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-button

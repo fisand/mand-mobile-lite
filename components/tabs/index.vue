@@ -15,7 +15,8 @@
   </div>
 </template>
 
-<script>import TabBar from '../tab-bar'
+<script>
+import TabBar from '../tab-bar/index.vue'
 
 export default {
   name: 'md-tabs',
@@ -110,7 +111,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-tabs-content

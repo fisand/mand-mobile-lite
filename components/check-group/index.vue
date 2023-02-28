@@ -1,3 +1,5 @@
-<script>import CheckGroup from '../check/group'
+<script>
+import CheckGroup from '../check/group.vue'
 export default CheckGroup
-</script>
+
+</script>

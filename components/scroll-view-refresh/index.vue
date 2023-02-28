@@ -1,3 +1,5 @@
-<script>import ScrollViewRefresh from '../scroll-view/refresh'
+<script>
+import ScrollViewRefresh from '../scroll-view/refresh.vue'
 export default ScrollViewRefresh
-</script>
+
+</script>

@@ -51,8 +51,9 @@
   </div>
 </template>
 
-<script>import Popup from '../popup'
-import Keyborad from './board'
+<script>
+import Popup from '../popup/index.vue'
+import Keyborad from './board.vue'
 
 export default {
   name: 'md-number-keyboard',
@@ -140,7 +141,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-number-keyboard

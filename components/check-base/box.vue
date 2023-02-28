@@ -18,8 +18,9 @@
   </div>
 </template>
 
-<script>import Tag from '../tag'
-import Icon from '../icon'
+<script>
+import Tag from '../tag/index.vue'
+import Icon from '../icon/index.vue'
 export default {
   name: 'md-check-base-box',
 
@@ -43,7 +44,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-check-base-box

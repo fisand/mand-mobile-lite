@@ -57,16 +57,17 @@
   </div>
 </template>
 
-<script>import {t} from '../_locale'
-import Popup from '../popup'
-import PopupTitlebar from '../popup/title-bar'
+<script>
+import {t} from '../_locale'
+import Popup from '../popup/index.vue'
+import PopupTitlebar from '../popup/title-bar.vue'
 import popupMixin from '../popup/mixins'
 import popupTitleBarMixin from '../popup/mixins/title-bar'
-import Icon from '../icon'
-import Tabs from '../tabs'
-import TabPane from '../tab-pane'
-import RadioList from '../radio-list'
-import ScrollView from '../scroll-view'
+import Icon from '../icon/index.vue'
+import Tabs from '../tabs/index.vue'
+import TabPane from '../tab-pane/index.vue'
+import RadioList from '../radio-list/index.vue'
+import ScrollView from '../scroll-view/index.vue'
 import {extend} from '../_util'
 
 export default {
@@ -243,7 +244,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-tab-picker

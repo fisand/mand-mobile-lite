@@ -74,8 +74,9 @@
   </div>
 </template>
 
-<script>import titleBarMixin from './mixins/title-bar'
-import Icon from '../icon'
+<script>
+import titleBarMixin from './mixins/title-bar'
+import Icon from '../icon/index.vue'
 
 export default {
   name: 'md-popup-title-bar',
@@ -130,7 +131,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus" scoped>
 .md-popup-title-bar

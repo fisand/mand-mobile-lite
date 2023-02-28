@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import Picker from '../picker'
+import Picker from '../picker/index.vue'
 import pickerMixin from '../picker/mixins'
 import {
   toObject,

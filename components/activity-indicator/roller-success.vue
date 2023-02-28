@@ -41,7 +41,8 @@
   </div>
 </template>
 
-<script>import Roller from './roller'
+<script>
+import Roller from './roller.vue'
 
 export default {
   name: 'md-activity-indicator-rolling-success',
@@ -112,7 +113,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-activity-indicator-rolling-success

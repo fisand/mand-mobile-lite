@@ -74,9 +74,10 @@
   </div>
 </template>
 
-<script>import {noop} from '../_util'
+<script>
+import {noop} from '../_util'
 import {t} from '../_locale'
-import Key from './key'
+import Key from './key.vue'
 
 export default {
   name: 'md-number-keyboard-container',
@@ -171,7 +172,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-number-keyboard-container

@@ -1,3 +1,5 @@
-<script>import RadioList from '../radio/list'
+<script>
+import RadioList from '../radio/list.vue'
 export default RadioList
-</script>
+
+</script>

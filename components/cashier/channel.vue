@@ -46,9 +46,10 @@
   </div>
 </template>
 
-<script>import Button from '../button'
-import Icon from '../icon'
-import ChannelItem from './channel-item'
+<script>
+import Button from '../button/index.vue'
+import Icon from '../icon/index.vue'
+import ChannelItem from './channel-item.vue'
 
 export default {
   name: 'md-cashier-channel',
@@ -122,7 +123,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-cashier-channel
@@ -156,7 +158,7 @@ export default {
       // max-height 64px
       transition all .5s ease-in
       overflow hidden
-      
+
     .choose-channel-more
       margin-top 10px
       font-size cashier-choose-more-font-size

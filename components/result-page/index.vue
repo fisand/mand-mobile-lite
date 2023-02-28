@@ -25,8 +25,9 @@
   </div>
 </template>
 
-<script>import {t} from '../_locale'
-import Button from '../button'
+<script>
+import {t} from '../_locale'
+import Button from '../button/index.vue'
 
 export default {
   name: 'md-result-page',
@@ -89,7 +90,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-result

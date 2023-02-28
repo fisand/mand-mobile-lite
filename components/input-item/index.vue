@@ -114,9 +114,10 @@
   </md-field-item>
 </template>
 
-<script>import Icon from '../icon'
-import FieldItem from '../field-item'
-import NumberKeyboard from '../number-keyboard'
+<script>
+import Icon from '../icon/index.vue'
+import FieldItem from '../field-item/index.vue'
+import NumberKeyboard from '../number-keyboard/index.vue'
 import {getCursorsPosition, setCursorsPosition} from './cursor'
 import {noop, randomId, debounce} from '../_util'
 import {formatValueByGapRule, formatValueByGapStep, trimValue} from '../_util/formate-value'
@@ -569,7 +570,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-input-item

@@ -1,4 +1,6 @@
-<script>import PopupTitleBar from '../popup/title-bar'
+<script>
+import PopupTitleBar from '../popup/title-bar.vue'
 export default PopupTitleBar
-</script>
+
+</script>
 

@@ -42,8 +42,9 @@
     </template>
   </md-field-item>
 </template>
-<script>import FieldItem from '../field-item'
-import Icon from '../icon'
+<script>
+import FieldItem from '../field-item/index.vue'
+import Icon from '../icon/index.vue'
 import {noop, randomId} from '../_util'
 import {getCursorsPosition, setCursorsPosition} from '../input-item/cursor'
 
@@ -232,7 +233,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 <style lang="stylus">
 .md-textarea-item
   &-msg

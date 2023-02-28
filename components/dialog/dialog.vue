@@ -61,9 +61,10 @@
   </div>
 </template>
 
-<script>import Popup from '../popup'
-import Icon from '../icon'
-import ActivityIndicatorRolling from '../activity-indicator/roller'
+<script>
+import Popup from '../popup/index.vue'
+import Icon from '../icon/index.vue'
+import ActivityIndicatorRolling from '../activity-indicator/roller.vue'
 import {mdDocument} from '../_util'
 
 export default {
@@ -177,7 +178,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-dialog
@@ -280,7 +282,7 @@ export default {
     color dialog-action-highlight-color
     remove-hairline(right)
     .md-dialog-btn-loading .md-activity-indicator-svg .circle circle
-      stroke dialog-action-highlight-color 
+      stroke dialog-action-highlight-color
   &:not(.disabled):active
     background-color color-bg-tap
   .md-dialog-btn-loading .md-activity-indicator-svg

@@ -56,9 +56,10 @@
   </div>
 </template>
 
-<script>import Popup from '../popup'
-import PopTitleBar from '../popup/title-bar'
-import PickerColumn from './picker-column'
+<script>
+import Popup from '../popup/index.vue'
+import PopTitleBar from '../popup/title-bar.vue'
+import PickerColumn from './picker-column.vue'
 import pickerMixin from './mixins'
 import cascadePicker from './cascade'
 import {compareObjects, extend} from '../_util'
@@ -337,7 +338,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-picker

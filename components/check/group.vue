@@ -4,7 +4,8 @@
   </div>
 </template>
 
-<script>import Check from './index'
+<script>
+import Check from './index.vue'
 
 export default {
   name: 'md-check-group',
@@ -87,5 +88,6 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 

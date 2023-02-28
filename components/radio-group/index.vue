@@ -1,3 +1,5 @@
-<script>import RadioGroup from '../radio/group'
+<script>
+import RadioGroup from '../radio/group.vue'
 export default RadioGroup
-</script>
+
+</script>

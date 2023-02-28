@@ -18,7 +18,8 @@
   </div>
 </template>
 
-<script>import CarouselCircle from './carousel-circle'
+<script>
+import CarouselCircle from './carousel-circle.vue'
 
 export default {
   name: 'md-activity-indicator-carousel',
@@ -59,7 +60,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-activity-indicator-carousel

@@ -14,7 +14,9 @@
   </div>
 </template>
 
-<script>import Button from '../button'
+<script>
+import Button from '../button/index.vue'
+
 export default {
   name: 'md-cashier-channel-button',
 
@@ -32,7 +34,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-cashier-block-btn

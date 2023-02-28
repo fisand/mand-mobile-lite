@@ -18,8 +18,9 @@
   </div>
 </template>
 
-<script>import Popup from '../popup'
-import Icon from '../icon'
+<script>
+import Popup from '../popup/index.vue'
+import Icon from '../icon/index.vue'
 
 export default {
   name: 'md-toast',
@@ -99,7 +100,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-toast

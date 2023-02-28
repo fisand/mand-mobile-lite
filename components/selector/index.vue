@@ -86,16 +86,17 @@
   </div>
 </template>
 
-<script>import {t} from '../_locale'
-import Icon from '../icon'
-import Popup from '../popup'
-import PopupTitlebar from '../popup/title-bar'
+<script>
+import {t} from '../_locale'
+import Icon from '../icon/index.vue'
+import Popup from '../popup/index.vue'
+import PopupTitlebar from '../popup/title-bar.vue'
 import popupMixin from '../popup/mixins'
 import popupTitleBarMixin from '../popup/mixins/title-bar'
-import RadioList from '../radio-list'
+import RadioList from '../radio-list/index.vue'
 import radioMixin from '../radio/mixins'
-import ScrollView from '../scroll-view'
-import CheckList from '../check-list'
+import ScrollView from '../scroll-view/index.vue'
+import CheckList from '../check-list/index.vue'
 
 export default {
   name: 'md-selector',
@@ -289,7 +290,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-selector

@@ -1,4 +1,6 @@
-<script>import TabPane from '../tabs/tab-pane'
+<script>
+import TabPane from '../tabs/tab-pane.vue'
 export default TabPane
-</script>
+
+</script>
 

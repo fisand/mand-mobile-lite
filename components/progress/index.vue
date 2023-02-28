@@ -17,7 +17,8 @@
   </md-activity-indicator-rolling>
 </template>
 
-<script>import Roller from '../activity-indicator/roller'
+<script>
+import Roller from '../activity-indicator/roller.vue'
 import {noop, inBrowser} from '../_util'
 import Animate from '../_util/animate'
 
@@ -112,4 +113,5 @@ export default {
     },
   },
 }
-</script>
+
+</script>

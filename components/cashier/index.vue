@@ -128,17 +128,18 @@
   </div>
 </template>
 
-<script>import Popup from '../popup'
-import PopupTitlebar from '../popup/title-bar'
+<script>
+import Popup from '../popup/index.vue'
+import PopupTitlebar from '../popup/title-bar.vue'
 import popupMixin from '../popup/mixins'
 import popupTitleBarMixin from '../popup/mixins/title-bar'
-import Captcha from '../captcha'
-import Icon from '../icon'
+import Captcha from '../captcha/index.vue'
+import Icon from '../icon/index.vue'
 import RollerSuccess from '../activity-indicator/roller-success'
 import {noop, extend} from '../_util'
 import {t} from '../_locale'
-import Channel from './channel'
-import ChannelButton from './channel-button'
+import Channel from './channel.vue'
+import ChannelButton from './channel-button.vue'
 
 export default {
   name: 'md-cashier',
@@ -292,7 +293,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-cashier

@@ -29,8 +29,9 @@
   </md-water-mark>
 </template>
 
-<script>import FieldItem from '../field-item'
-import WaterMark from '../water-mark'
+<script>
+import FieldItem from '../field-item/index.vue'
+import WaterMark from '../water-mark/index.vue'
 
 export default {
   name: 'md-bill',
@@ -55,7 +56,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-bill

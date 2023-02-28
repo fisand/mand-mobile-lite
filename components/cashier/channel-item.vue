@@ -39,7 +39,8 @@
   </div>
 </template>
 
-<script>import Icon from '../icon'
+<script>
+import Icon from '../icon/index.vue'
 export default {
   name: 'md-cashier-channel-item',
 
@@ -61,7 +62,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-cashier-channel-item
@@ -78,7 +80,7 @@ export default {
     height 32px
     margin 6px 0
   .item-image img
-    block() 
+    block()
   .item-label
     float left
     margin-left h-gap-sm

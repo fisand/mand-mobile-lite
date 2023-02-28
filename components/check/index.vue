@@ -16,7 +16,8 @@
   </label>
 </template>
 
-<script>import Icon from '../icon'
+<script>
+import Icon from '../icon/index.vue'
 import checkMixin from './mixin'
 
 export default {
@@ -91,7 +92,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-check

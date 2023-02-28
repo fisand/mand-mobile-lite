@@ -20,8 +20,9 @@
   </div>
 </template>
 
-<script>import Swiper from '../swiper'
-import SwiperItem from '../swiper/swiper-item'
+<script>
+import Swiper from '../swiper/index.vue'
+import SwiperItem from '../swiper/swiper-item.vue'
 
 export default {
   name: 'md-image-viewer',
@@ -133,7 +134,8 @@ export default {
     publicMethod() {},
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-image-viewer

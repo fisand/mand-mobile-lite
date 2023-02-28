@@ -9,8 +9,9 @@
   </div>
 </template>
 
-<script>import {t} from '../_locale'
-import Roller from '../activity-indicator/roller'
+<script>
+import {t} from '../_locale'
+import Roller from '../activity-indicator/roller.vue'
 
 export default {
   name: 'md-scroll-view-refresh',
@@ -76,7 +77,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-scroll-view-refresh

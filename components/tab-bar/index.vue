@@ -49,7 +49,8 @@
   </nav>
 </template>
 
-<script>import ScrollView from '../scroll-view'
+<script>
+import ScrollView from '../scroll-view/index.vue'
 
 export default {
   name: 'md-tab-bar',
@@ -255,7 +256,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-tab-bar

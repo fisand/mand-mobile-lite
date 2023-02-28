@@ -45,10 +45,11 @@
   </div>
 </template>
 
-<script>import Roller from './roller'
+<script>
+import Roller from './roller.vue'
 // import RollerSuccess from './roller-success'
-import Spinner from './spinner'
-import Carousel from './carousel'
+import Spinner from './spinner.vue'
+import Carousel from './carousel.vue'
 
 export default {
   name: 'md-activity-indicator',
@@ -95,7 +96,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-activity-indicator

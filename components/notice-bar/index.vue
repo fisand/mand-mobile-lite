@@ -43,7 +43,8 @@
   </div>
 </template>
 
-<script>import Icon from '../icon'
+<script>
+import Icon from '../icon/index.vue'
 export default {
   name: 'md-notice-bar',
 
@@ -162,7 +163,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-notice-bar

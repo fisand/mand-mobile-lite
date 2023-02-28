@@ -11,7 +11,8 @@
   </div>
 </template>
 
-<script>import Icon from '../icon'
+<script>
+import Icon from '../icon/index.vue'
 
 export default {
   name: 'md-activity-indicator-spinning',
@@ -34,7 +35,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-activity-indicator-spinning
