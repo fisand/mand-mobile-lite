@@ -1,7 +1,7 @@
 import Vue from 'vue'
 
 // Development environment
-export const isProd = process.env.NODE_ENV === 'production'
+export const isProd = import.meta.env.isProd
 
 // Browser environment sniffing
 export const inBrowser = !Vue.prototype.$isServer || typeof window !== 'undefined'

@@ -4,6 +4,9 @@ import Unocss from 'unocss/vite'
 import { resolve } from 'path'
 
 export default defineConfig({
+  define: {
+    'process.env.MAND_ENV': JSON.stringify('')
+  },
   plugins: [Vue(), Unocss()],
   css: {
     preprocessorOptions: {
