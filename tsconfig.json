@@ -12,7 +12,11 @@
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
     "noEmit": true,
+    "baseUrl": ".",
     "allowJs": true
   },
-  "include": ["components/**/*.ts", "components/**/*.d.ts", "components/**/*.tsx", "components/**/*.vue"]
+  "include": ["components/**/*.ts", "components/**/*.d.ts", "components/**/*.tsx", "components/**/*.vue"],
+  "vueCompilerOptions": {
+    "target": 2.7
+  }
 }

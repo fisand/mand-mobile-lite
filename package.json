@@ -5,6 +5,7 @@
   "main": "dist/index.mjs",
   "module": "dist/index.mjs",
   "scripts": {
+    "dev": "vite dev",
     "build": "unbuild && tsx scripts/afterBuild",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,7 +22,11 @@
     "stylus": "^0.59.0",
     "tsx": "^3.12.3",
     "unbuild": "^1.1.2",
+    "unocss": "^0.50.1",
     "vite": "^4.1.4",
     "vue": "~2.7.14"
+  },
+  "dependencies": {
+    "@unocss/reset": "^0.50.1"
   }
 }

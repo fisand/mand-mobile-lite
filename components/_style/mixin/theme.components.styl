@@ -1,412 +1,411 @@
-/// action-bar
-action-bar-width = 100%
-action-bar-height = 100px
-action-bar-padding-v = v-gap-md
-action-bar-padding-h = h-gap-sl
-action-bar-button-gap = 22px
-action-bar-slot-height = button-height
-action-bar-zindex = 100
+:root
+  /// action-bar
+  --md-action-bar-width: 100%
+  --md-action-bar-height: calc(100px / 2)
+  --md-action-bar-padding-v: var(--md-v-gap-md)
+  --md-action-bar-padding-h: var(--md-h-gap-sl)
+  --md-action-bar-button-gap: calc(22px / 2)
+  --md-action-bar-slot-height: var(--md-button-height)
+  --md-action-bar-zindex: 100
 
-/// action-sheet
-action-sheet-height = 120px
-action-sheet-padding-h = h-gap-sl
-action-sheet-color = color-text-body
-action-sheet-color-highlight = color-primary
-action-sheet-color-cancel = color-text-minor
-action-sheet-font-size = font-caption-normal
-action-sheet-bg = color-bg-inverse
-action-sheet-disabled-opacity = opacity-disabled
-action-sheet-cancel-gap-bg = color-bg-base
-action-sheet-zindex = 1101
+  /// action-sheet
+  --md-action-sheet-height: calc(120px / 2)
+  --md-action-sheet-padding-h: var(--md-h-gap-sl)
+  --md-action-sheet-color: var(--md-color-text-body)
+  --md-action-sheet-color-highlight: var(--md-color-primary)
+  --md-action-sheet-color-cancel: var(--md-color-text-minor)
+  --md-action-sheet-font-size: var(--md-font-caption-normal)
+  --md-action-sheet-bg: var(--md-color-bg-inverse)
+  --md-action-sheet-disabled-opacity: var(--md-opacity-disabled)
+  --md-action-sheet-cancel-gap-bg: var(--md-color-bg-base)
+  --md-action-sheet-zindex: 1101
 
-/// agree
-agree-fill = color-primary
-// agree-fill-inverse = color-bg-disabled
-agree-disabled-opacity = opacity-disabled
+  /// agree
+  --md-agree-fill: var(--md-color-primary)
+  // agree-fill-inverse: var(--md-color-bg-disabled)
+  --md-agree-disabled-opacity: var(--md-opacity-disabled)
 
-/// bill
-bill-bg = color-bg-base
-bill-name-font-size = font-caption-large
-bill-name-color = color-text-body
-bill-no-font-size = font-minor-large
-bill-no-color = color-text-placeholder
-bill-description-font-size = font-minor-large
-bill-description-color = color-text-caption
+  /// bill
+  --md-bill-bg: var(--md-color-bg-base)
+  --md-bill-name-font-size: var(--md-font-caption-large)
+  --md-bill-name-color: var(--md-color-text-body)
+  --md-bill-no-font-size: var(--md-font-minor-large)
+  --md-bill-no-color: var(--md-color-text-placeholder)
+  --md-bill-description-font-size: var(--md-font-minor-large)
+  --md-bill-description-color: var(--md-color-text-caption)
 
-/// button
-button-primary-fill = color-primary
-button-default-fill = color-bg-inverse
-button-disabled-fill = color-bg-disabled
-button-warning-fill = color-text-error
+  /// button
+  --md-button-primary-fill: var(--md-color-primary)
+  --md-button-default-fill: var(--md-color-bg-inverse)
+  --md-button-disabled-fill: var(--md-color-bg-disabled)
+  --md-button-warning-fill: var(--md-color-text-error)
 
-button-primary-active-fill = #167DE5
-button-default-active-fill = color-bg-base
-button-warning-active-fill = #E9424F
+  --md-button-primary-active-fill: #167DE5
+  --md-button-default-active-fill: var(--md-color-bg-base)
+  --md-button-warning-active-fill: #E9424F
 
-button-primary-plain-active-fill = #EBF5FF
-button-default-plain-active-fill = color-bg-base
-button-warning-plain-active-fill = #FAC3C6
+  --md-button-primary-plain-active-fill: #EBF5FF
+  --md-button-default-plain-active-fill: var(--md-color-bg-base)
+  --md-button-warning-plain-active-fill: #FAC3C6
 
-button-default-color = color-text-body
-button-primary-color = color-text-base-inverse
-button-disabled-color = color-text-base-inverse
-button-warning-color = color-text-base-inverse
+  --md-button-default-color: var(--md-color-text-body)
+  --md-button-primary-color: var(--md-color-text-base-inverse)
+  --md-button-disabled-color: var(--md-color-text-base-inverse)
+  --md-button-warning-color: var(--md-color-text-base-inverse)
 
-button-default-plain-color = button-default-color
-button-primary-plain-color = button-primary-fill
-button-warning-plain-color = button-warning-fill
-button-disabled-plain-color = color-text-disabled
+  --md-button-default-plain-color: var(--md-button-default-color)
+  --md-button-primary-plain-color: var(--md-button-primary-fill)
+  --md-button-warning-plain-color: var(--md-button-warning-fill)
+  --md-button-disabled-plain-color: var(--md-color-text-disabled)
 
-button-height = 100px
-button-font-size = font-caption-large
-button-font-weight = font-weight-medium
+  --md-button-height: calc(100px / 2)
+  --md-button-font-size: var(--md-font-caption-large)
+  --md-button-font-weight: var(--md-font-weight-medium)
 
-button-small-height = 64px
-button-small-font-size = font-body-large
+  --md-button-small-height: calc(64px / 2)
+  --md-button-small-font-size: var(--md-font-body-large)
 
-button-radius = radius-normal
+  --md-button-radius: var(--md-radius-normal)
 
-/// captcha
-captcha-zindex = 1301
-captcha-title-color = color-text-base
-captcha-title-font-size = font-heading-normal
-captcha-color = color-text-caption
-captcha-font-size = font-body-large
-captcha-footer-font-size = font-minor-large
-captcha-error-color = color-text-error
-captcha-brief-color = color-text-caption
-captcha-countbtn-gap = h-gap-lg
-captcha-btn-color = color-primary
+  /// captcha
+  --md-captcha-zindex: 1301
+  --md-captcha-title-color: var(--md-color-text-base)
+  --md-captcha-title-font-size: var(--md-font-heading-normal)
+  --md-captcha-color: var(--md-color-text-caption)
+  --md-captcha-font-size: var(--md-font-body-large)
+  --md-captcha-footer-font-size: var(--md-font-minor-large)
+  --md-captcha-error-color: var(--md-color-text-error)
+  --md-captcha-brief-color: var(--md-color-text-caption)
+  --md-captcha-countbtn-gap: var(--md-h-gap-lg)
+  --md-captcha-btn-color: var(--md-color-primary)
 
-/// cashier
-cashier-bg = color-bg-inverse
-cashier-choose-title-font-size = font-body-large // 支付标题
-cashier-choose-title-color = color-text-minor
-cashier-choose-amount-font-size = 80px // 支付金额
-cashier-choose-amount-color = color-text-base
-cashier-choose-describe-font-size = font-minor-normal // 支付描述
-cashier-choose-describe-color = color-text-minor
-cashier-choose-channel-title-font-size = 30px // 支付渠道标题
-cashier-choose-channel-title-color = color-text-body
-cashier-choose-channel-title-action-font-size = font-body-large // 支付渠道动作标题
-cashier-choose-channel-title-action-color = color-primary
-cashier-choose-channel-desc-font-size = font-minor-large // 支付渠道备注
-cashier-choose-channel-desc-color = color-text-caption
-cashier-choose-channel-icon-color = color-primary
-cashier-choose-more-font-size = font-minor-large // 更多支付方式
-cashier-choose-more-color = color-text-minor
+  /// cashier
+  --md-cashier-bg: var(--md-color-bg-inverse)
+  --md-cashier-choose-title-font-size: var(--md-font-body-large) // 支付标题
+  --md-cashier-choose-title-color: var(--md-color-text-minor)
+  --md-cashier-choose-amount-font-size: calc(80px / 2) // 支付金额
+  --md-cashier-choose-amount-color: var(--md-color-text-base)
+  --md-cashier-choose-describe-font-size: var(--md-font-minor-normal) // 支付描述
+  --md-cashier-choose-describe-color: var(--md-color-text-minor)
+  --md-cashier-choose-channel-title-font-size: calc(30px / 2) // 支付渠道标题
+  --md-cashier-choose-channel-title-color: var(--md-color-text-body)
+  --md-cashier-choose-channel-title-action-font-size: var(--md-font-body-large) // 支付渠道动作标题
+  --md-cashier-choose-channel-title-action-color: var(--md-color-primary)
+  --md-cashier-choose-channel-desc-font-size: var(--md-font-minor-large) // 支付渠道备注
+  --md-cashier-choose-channel-desc-color: var(--md-color-text-caption)
+  --md-cashier-choose-channel-icon-color: var(--md-color-primary)
+  --md-cashier-choose-more-font-size: var(--md-font-minor-large) // 更多支付方式
+  --md-cashier-choose-more-color: var(--md-color-text-minor)
 
-/// chart
-chart-line-color = #ccc
-chart-path-color = color-primary
-chart-text-color = color-text-minor
-chart-label-size = 22px
-chart-value-size = 20px
+  /// chart
+  --md-chart-line-color: #ccc
+  --md-chart-path-color: var(--md-color-primary)
+  --md-chart-text-color: var(--md-color-text-minor)
+  --md-chart-label-size: calc(22px / 2)
+  --md-chart-value-size: calc(20px / 2)
 
-/// cell-item
-cell-item-min-height = 100px
-cell-item-padding-v = 32px
-cell-item-multilines-padding-v = 36px
-cell-item-title-color = color-text-base
-cell-item-title-font-size = font-caption-normal
-cell-item-brief-color = color-text-caption
-cell-item-brief-font-size = font-minor-large
-cell-item-right-color = color-text-caption
-cell-item-right-font-size = font-body-large
-cell-item-border-color = color-border-base
+  /// cell-item
+  --md-cell-item-min-height: calc(100px / 2)
+  --md-cell-item-padding-v: calc(32px / 2)
+  --md-cell-item-multilines-padding-v: calc(36px / 2)
+  --md-cell-item-title-color: var(--md-color-text-base)
+  --md-cell-item-title-font-size: var(--md-font-caption-normal)
+  --md-cell-item-brief-color: var(--md-color-text-caption)
+  --md-cell-item-brief-font-size: var(--md-font-minor-large)
+  --md-cell-item-right-color: var(--md-color-text-caption)
+  --md-cell-item-right-font-size: var(--md-font-body-large)
+  --md-cell-item-border-color: var(--md-color-border-base)
 
-/// check
-check-color = color-text-highlight
+  /// check
+  --md-check-color: var(--md-color-text-highlight)
 
-checkbox-color = color-text-base
-checkbox-font-size = font-caption-normal
-checkbox-disabled-color = color-text-disabled
-checkbox-active-color = color-primary
-checkbox-active-border-color = color-primary
-checkbox-border-color = color-border-element
-checkbox-border-radius = radius-normal
+  --md-checkbox-color: var(--md-color-text-base)
+  --md-checkbox-font-size: var(--md-font-caption-normal)
+  --md-checkbox-disabled-color: var(--md-color-text-disabled)
+  --md-checkbox-active-color: var(--md-color-primary)
+  --md-checkbox-active-border-color: var(--md-color-primary)
+  --md-checkbox-border-color: var(--md-color-border-element)
+  --md-checkbox-border-radius: var(--md-radius-normal)
 
-/// codebox
-codebox-font-size = 50px
-codebox-width = 66px
-codebox-height = 70px
-codebox-gutter = 18px
-codebox-border-width = 2px
-codebox-border-color = color-border-element
-codebox-border-active-color = color-text-base
-codebox-color = color-text-base
-codebox-blink-color = color-text-base
-codebox-dot-color = color-text-base
-codebox-holder-space = h-gap-sm
-codebox-disabled-color = color-text-disabled
+  /// codebox
+  --md-codebox-font-size: calc(50px / 2)
+  --md-codebox-width: calc(66px / 2)
+  --md-codebox-height: calc(70px / 2)
+  --md-codebox-gutter: calc(18px / 2)
+  --md-codebox-border-width: calc(2px / 2)
+  --md-codebox-border-color: var(--md-color-border-element)
+  --md-codebox-border-active-color: var(--md-color-text-base)
+  --md-codebox-color: var(--md-color-text-base)
+  --md-codebox-blink-color: var(--md-color-text-base)
+  --md-codebox-dot-color: var(--md-color-text-base)
+  --md-codebox-holder-space: var(--md-h-gap-sm)
+  --md-codebox-disabled-color: var(--md-color-text-disabled)
 
-/// date-picker
-date-picker-font-size = font-caption-normal
-date-time-picker-font-size = font-body-large
+  /// date-picker
+  --md-date-picker-font-size: var(--md-font-caption-normal)
+  --md-date-time-picker-font-size: var(--md-font-body-large)
 
-/// dialog
-dialog-width = 606px
-dialog-radius = 12px
-dialog-body-padding = 52px
-dialog-title-font-size = 40px
-dialog-title-color = color-text-base
-dialog-text-font-size = font-body-large
-dialog-action-font-weight = font-weight-medium
-dialog-text-color = color-text-minor
-dialog-action-height = 100px
-dialog-action-font-size = font-caption-large
-dialog-action-border-color = color-border-base
-dialog-close-color = color-text-caption
-dialog-action-highlight-color = color-primary
-dialog-icon-size = 100px
-dialog-icon-fill = color-text-caption
-dialog-zindex = 1500
+  /// dialog
+  --md-dialog-width: calc(606px / 2)
+  --md-dialog-radius: calc(12px / 2)
+  --md-dialog-body-padding: calc(52px / 2)
+  --md-dialog-title-font-size: calc(40px / 2)
+  --md-dialog-title-color: var(--md-color-text-base)
+  --md-dialog-text-font-size: var(--md-font-body-large)
+  --md-dialog-action-font-weight: var(--md-font-weight-medium)
+  --md-dialog-text-color: var(--md-color-text-minor)
+  --md-dialog-action-height: calc(100px / 2)
+  --md-dialog-action-font-size: var(--md-font-caption-large)
+  --md-dialog-action-border-color: var(--md-color-border-base)
+  --md-dialog-close-color: var(--md-color-text-caption)
+  --md-dialog-action-highlight-color: var(--md-color-primary)
+  --md-dialog-icon-size: calc(100px / 2)
+  --md-dialog-icon-fill: var(--md-color-text-caption)
+  --md-dialog-zindex: 1500
 
-/// drop-menu
-drop-menu-height = 110px
-drop-menu-bar-bg = color-bg-inverse
-drop-menu-bar-border-color = color-border-base
-drop-menu-list-bg = color-bg-inverse
-drop-menu-color = color-primary
-drop-menu-font-size = font-caption-normal
-drop-menu-font-weight = font-weight-medium
-drop-menu-disabled-opacity = opacity-disabled
-drop-menu-zindex = 1200
+  /// drop-menu
+  --md-drop-menu-height: calc(110px / 2)
+  --md-drop-menu-bar-bg: var(--md-color-bg-inverse)
+  --md-drop-menu-bar-border-color: var(--md-color-border-base)
+  --md-drop-menu-list-bg: var(--md-color-bg-inverse)
+  --md-drop-menu-color: var(--md-color-primary)
+  --md-drop-menu-font-size: var(--md-font-caption-normal)
+  --md-drop-menu-font-weight: var(--md-font-weight-medium)
+  --md-drop-menu-disabled-opacity: var(--md-opacity-disabled)
+  --md-drop-menu-zindex: 1200
 
-/// field
-field-padding-h = h-gap-sl
-field-padding-v = v-gap-sl
-field-bg-color = color-bg-inverse
-field-header-gap = v-gap-lg
-field-footer-gap = v-gap-md
-field-title-color = color-text-base
-field-title-font-size = font-caption-large
-field-title-font-weight = font-weight-medium
-field-title-font-weight-android = bold
-field-brief-color = color-text-caption
-field-brief-font-size = font-minor-large
-field-action-color = color-text-caption
-field-action-font-size = font-minor-large
+  /// field
+  --md-field-padding-h: var(--md-h-gap-sl)
+  --md-field-padding-v: var(--md-v-gap-sl)
+  --md-field-bg-color: var(--md-color-bg-inverse)
+  --md-field-header-gap: var(--md-v-gap-lg)
+  --md-field-footer-gap: var(--md-var(--md-v-gap-md))
+  --md-field-title-color: var(--md-color-text-base)
+  --md-field-title-font-size: var(--md-font-caption-large)
+  --md-field-title-font-weight: var(--md-font-weight-medium)
+  --md-field-title-font-weight-android: var(--md-bold)
+  --md-field-brief-color: var(--md-color-text-caption)
+  --md-field-brief-font-size: var(--md-font-minor-large)
+  --md-field-action-color: var(--md-color-text-caption)
+  --md-field-action-font-size: var(--md-font-minor-large)
 
-/// field-item
-field-item-min-height = 100px
-field-item-padding-v = 30px
-field-item-title-width = 160px
-field-item-title-gap = 10px
-field-item-color = color-text-base
-field-item-font-size = font-caption-normal
-field-item-font-weight = font-weight-medium
-field-item-placeholder-color = color-text-placeholder
-field-item-addon-color = color-text-caption
-field-item-addon-font-size = font-body-large
-field-item-border-color = color-border-base
-field-item-children-font-size = font-minor-large
+  /// field-item
+  --md-field-item-min-height: calc(100px / 2)
+  --md-field-item-padding-v: calc(30px / 2)
+  --md-field-item-title-width: calc(160px / 2)
+  --md-field-item-title-gap: calc(10px / 2)
+  --md-field-item-color: var(--md-color-text-base)
+  --md-field-item-font-size: var(--md-font-caption-normal)
+  --md-field-item-font-weight: var(--md-font-weight-medium)
+  --md-field-item-placeholder-color: var(--md-color-text-placeholder)
+  --md-field-item-addon-color: var(--md-color-text-caption)
+  --md-field-item-addon-font-size: var(--md-font-body-large)
+  --md-field-item-border-color: var(--md-color-border-base)
+  --md-field-item-children-font-size: var(--md-font-minor-large)
 
-/// detail-item
-detail-item-font-size = font-body-large
-detail-item-title-color = color-text-caption
-detail-item-content-color = color-text-body
-detail-item-gap = v-gap-sm
+  /// detail-item
+  --md-detail-item-font-size: var(--md-font-body-large)
+  --md-detail-item-title-color: var(--md-color-text-caption)
+  --md-detail-item-content-color: var(--md-color-text-body)
+  --md-detail-item-gap: var(--md-v-gap-sm)
 
-/// icon
-icon-size-xss = 16px
-icon-size-xs = 20px
-icon-size-sm = 24px
-icon-size-md = 32px
-icon-size-lg = 42px
-icon-font-family = url("https://manhattan.didistatic.com/static/manhattan/mand-mobile/icon/2.1.0/iconfont.woff") format("woff"), url("https://manhattan.didistatic.com/static/manhattan/mand-mobile/icon/2.1.0/iconfont.ttf") format("truetype")
+  /// icon
+  --md-icon-size-xss: calc(16px / 2)
+  --md-icon-size-xs: calc(20px / 2)
+  --md-icon-size-sm: calc(24px / 2)
+  --md-icon-size-md: calc(32px / 2)
+  --md-icon-size-lg: calc(42px / 2)
+  --md-icon-font-family: var(--md-url("https://manhattan.didistatic.com/static/manhattan/mand-mobile/icon/2.1.0/iconfont.woff") format("woff"), url("https://manhattan.didistatic.com/static/manhattan/mand-mobile/icon/2.1.0/iconfont.ttf") format("truetype"))
 
-/// image-viewer
-image-viewer-index-font-size = 32px
-image-viewer-index-bottom = 100px
-image-viewer-zindex = 1001
+  /// image-viewer
+  --md-image-viewer-index-font-size: calc(32px / 2)
+  --md-image-viewer-index-bottom: calc(100px / 2)
+  --md-image-viewer-zindex: 1001
 
-/// input-item
-input-item-height = 100px
-input-item-font-size = font-caption-normal
-input-item-font-weight = font-weight-medium
-input-item-font-weight-android = bold
-input-item-title-latent-font-size = font-body-normal
-input-item-font-size-large = 80px
-input-item-font-size-error = font-minor-large
-input-item-font-size-brief = font-minor-large
-input-item-color = color-text-base
-input-item-title-latent-color = color-text-minor
-input-item-color-disabled = color-text-caption
-input-item-color-error = color-text-error
-input-item-color-brief = color-text-caption
-input-item-placeholder = color-text-placeholder
-input-item-color-highlight = color-text-base
-input-item-icon = color-text-placeholder // delete icon
+  /// input-item
+  --md-input-item-height: calc(100px / 2)
+  --md-input-item-font-size: var(--md-font-caption-normal)
+  --md-input-item-font-weight: var(--md-font-weight-medium)
+  --md-input-item-font-weight-android: var(--md-bold)
+  --md-input-item-title-latent-font-size: var(--md-font-body-normal)
+  --md-input-item-font-size-large: calc(80px / 2)
+  --md-input-item-font-size-error: var(--md-font-minor-large)
+  --md-input-item-font-size-brief: var(--md-font-minor-large)
+  --md-input-item-color: var(--md-color-text-base)
+  --md-input-item-title-latent-color: var(--md-color-text-minor)
+  --md-input-item-color-disabled: var(--md-color-text-caption)
+  --md-input-item-color-error: var(--md-color-text-error)
+  --md-input-item-color-brief: var(--md-color-text-caption)
+  --md-input-item-placeholder: var(--md-color-text-placeholder)
+  --md-input-item-color-highlight: var(--md-color-text-base)
+  --md-input-item-icon: var(--md-color-text-placeholder) // delete icon
 
-/// textarea-item
-textarea-item-font-size = font-caption-normal
-textarea-item-font-weight = font-weight-medium
-textarea-item-line-height = 1.4
-textarea-item-color = color-text-base
-textarea-item-icon = color-text-placeholder // delete icon
-textarea-item-color-error = color-text-error
-textarea-item-color-disabled = color-text-caption
-textarea-item-placeholder-color = color-text-placeholder
-textarea-item-placeholder-weight = font-weight-normal
-
-
-/// slider
-slider-bg-base = color-bg-base
-slider-bg-tap = color-primary
-slider-handle-bg = color-bg-inverse
-
-/// landscape
-landscape-width = 540px
-// landscape-radius = radius-normal
-landscape-fullscreen-bg = color-bg-inverse
-landscape-zindex = 1600
-
-/// notice-bar
-notice-bar-fill = rgba(89, 158, 248, .08)
-notice-bar-font-size = font-body-normal
-notice-bar-color = color-primary
-notice-bar-border-radius = 32px
-notice-bar-fill-warning = #FFEEEF
-notice-bar-color-warning = #FF5B60
-notice-bar-fill-activity = #FFEDDE
-notice-bar-color-activity = #FF843D
-notice-bar-zindex = 999
-
-/// number-keyboard
-number-keyboard-width = 100%
-number-keyboard-height = 428px
-number-keyboard-bg = color-bg-base
-number-keyboard-key-height = 107px
-number-keyboard-key-bg = color-bg-inverse
-number-keyboard-key-bg-tap = color-bg-base
-number-keyboard-key-confirm-bg = color-primary
-number-keyboard-key-confirm-bg-tap = button-primary-active-fill
-number-keyboard-key-font-size = font-heading-medium
-number-keyboard-key-font-weight = font-weight-medium
-number-keyboard-key-color = color-text-base
-number-keyboard-key-confirm-color = color-text-base-inverse
-number-keyboard-key-border-color = color-border-base
-number-keyboard-zindex = 1302
-
-/// picker
-picker-padding-h = h-gap-sl
-picker-font-size = font-caption-normal
-picker-disabled-opacity = .2
-picker-color = color-text-disabled
-picker-color-active = color-text-highlight
-picker-font-weight-active = font-weight-medium
-picker-border-color = color-border-base
-picker-zindex = 1100
-
-/// popup
-popup-title-bar-bg = color-bg-inverse
-popup-title-bar-height = 120px
-popup-title-bar-height-large = 180px
-popup-title-bar-radius = 8px
-popup-title-bar-radius-large = 40px
-popup-title-bar-font-size-button = font-caption-large
-popup-title-bar-font-weight-button = font-weight-medium
-popup-title-bar-font-size-title = 40px
-popup-title-bar-font-size-describe = font-body-large
-popup-title-bar-color-title = color-text-base
-popup-title-bar-color-describe = color-text-caption
-popup-title-bar-color-button-left = color-text-minor
-popup-title-bar-color-button-right = color-text-highlight
-popup-mask-bg = color-mask
-popup-zindex = 1000
-
-///radio
-radio-color = color-text-highlight
-
-/// result-page
-result-page-image-size = 260px
-result-page-title-font-size = font-caption-normal
-result-page-describe-font-size = font-body-large
-result-page-title-color = color-text-base
-result-page-describe-color = color-text-caption
-
-/// selector
-selector-disabled-opacity = .2
-selector-active-color = color-primary
-selector-zindex = 1102
-
-/// stepper
-stepper-fill = color-bg-base
-stepper-disabled-opacity = opacity-disabled
-stepper-color = color-text-base
-stepper-font-size = font-body-large
-stepper-input-font-size = font-body-normal
-stepper-height = 50px
-stepper-width-button = 54px
-stepper-width-input = 68px
-stepper-radius-button = 2px
-stepper-radius-input = 0
-
-/// steps
-steps-color = color-border-base
-steps-color-active = color-primary
-steps-border-size = 1px
-steps-icon-size = 32px // icon size
-steps-text-color = color-text-body
-steps-text-font-size = font-body-large
-steps-text-gap-horizontal = 20px
-steps-text-gap-vertical = 40px
-steps-desc-color = color-text-caption
-steps-desc-font-size = font-body-normal
-steps-transition-delay = .15s
-
-/// switch
-switch-fill = color-primary
-switch-fill-inverse = color-bg-disabled
-switch-handle-color = #FFF
-switch-item-color-disabled = opacity-disabled
-
-/// swiper
-swiper-indicator-fill = color-primary
-
-/// tabs
-tab-font-size = font-body-large
-tab-font-weight = font-weight-medium
-tab-text-color = color-text-minor
-tab-active-color = color-primary
-tab-disabled-color = color-text-disabled
-tab-bg = color-bg-base
-tab-height = 100px
-tab-ink-height = 4px
-tab-offset = h-gap-sl
-tab-item-gap = 27px
-
-/// tab-picker
-tab-picker-height = 500px
-tab-picker-h-gap = h-gap-sl
-tab-picker-bg = color-bg-inverse
-tab-picker-zindex = 1102
-
-/// tag
-tag-color = color-primary
-tag-fillet-radius = 4px
-tag-large-font-size = font-body-normal
-tag-small-font-size = font-minor-normal
-tag-tiny-font-size = 12px
-
-/// tip
-tip-fill = #41485D
-tip-fill-opacity = .8
-tip-font-size = font-minor-large
-tip-color = color-text-base-inverse
-tip-radius = 1000px
-tip-padding = 15px 32px
-tip-close-size = 32px
-tip-shadow = 0 5px 20px rgba(0, 0, 0, .08)
-tip-zindex = 1303
-
-/// toast
-toast-fill = rgba(65, 72, 93, .77)
-toast-font-size = font-body-large
-toast-color = #fff
-toast-radius = radius-normal
-toast-padding = 20px 30px
-toast-zindex = 1700
+  /// textarea-item
+  --md-textarea-item-font-size: var(--md-font-caption-normal)
+  --md-textarea-item-font-weight: var(--md-font-weight-medium)
+  --md-textarea-item-line-height: 1.4
+  --md-textarea-item-color: var(--md-color-text-base)
+  --md-textarea-item-icon: var(--md-color-text-placeholder) // delete icon
+  --md-textarea-item-color-error: var(--md-color-text-error)
+  --md-textarea-item-color-disabled: var(--md-color-text-caption)
+  --md-textarea-item-placeholder-color: var(--md-color-text-placeholder)
+  --md-textarea-item-placeholder-weight: var(--md-font-weight-normal)
 
 
+  /// slider
+  --md-slider-bg-base: var(--md-color-bg-base)
+  --md-slider-bg-tap: var(--md-color-primary)
+  --md-slider-handle-bg: var(--md-color-bg-inverse)
+
+  /// landscape
+  --md-landscape-width: calc(540px / 2)
+  // landscape-radius: var(--md-radius-normal)
+  --md-landscape-fullscreen-bg: var(--md-color-bg-inverse)
+  --md-landscape-zindex: 1600
+
+  /// notice-bar
+  --md-notice-bar-fill: var(--md-rgba(89, 158, 248, .08))
+  --md-notice-bar-font-size: var(--md-font-body-normal)
+  --md-notice-bar-color: var(--md-color-primary)
+  --md-notice-bar-border-radius: calc(32px / 2)
+  --md-notice-bar-fill-warning: #FFEEEF
+  --md-notice-bar-color-warning: #FF5B60
+  --md-notice-bar-fill-activity: #FFEDDE
+  --md-notice-bar-color-activity: #FF843D
+  --md-notice-bar-zindex: 999
+
+  /// number-keyboard
+  --md-number-keyboard-width: 100%
+  --md-number-keyboard-height: calc(428px / 2)
+  --md-number-keyboard-bg: var(--md-color-bg-base)
+  --md-number-keyboard-key-height: calc(107px / 2)
+  --md-number-keyboard-key-bg: var(--md-color-bg-inverse)
+  --md-number-keyboard-key-bg-tap: var(--md-color-bg-base)
+  --md-number-keyboard-key-confirm-bg: var(--md-color-primary)
+  --md-number-keyboard-key-confirm-bg-tap: var(--md-button-primary-active-fill)
+  --md-number-keyboard-key-font-size: var(--md-font-heading-medium)
+  --md-number-keyboard-key-font-weight: var(--md-font-weight-medium)
+  --md-number-keyboard-key-color: var(--md-color-text-base)
+  --md-number-keyboard-key-confirm-color: var(--md-color-text-base-inverse)
+  --md-number-keyboard-key-border-color: var(--md-color-border-base)
+  --md-number-keyboard-zindex: 1302
+
+  /// picker
+  --md-picker-padding-h: var(--md-h-gap-sl)
+  --md-picker-font-size: var(--md-font-caption-normal)
+  --md-picker-disabled-opacity: .2
+  --md-picker-color: var(--md-color-text-disabled)
+  --md-picker-color-active: var(--md-color-text-highlight)
+  --md-picker-font-weight-active: var(--md-font-weight-medium)
+  --md-picker-border-color: var(--md-color-border-base)
+  --md-picker-zindex: 1100
+
+  /// popup
+  --md-popup-title-bar-bg: var(--md-color-bg-inverse)
+  --md-popup-title-bar-height: calc(120px / 2)
+  --md-popup-title-bar-height-large: calc(180px / 2)
+  --md-popup-title-bar-radius: calc(8px / 2)
+  --md-popup-title-bar-radius-large: calc(40px / 2)
+  --md-popup-title-bar-font-size-button: var(--md-font-caption-large)
+  --md-popup-title-bar-font-weight-button: var(--md-font-weight-medium)
+  --md-popup-title-bar-font-size-title: calc(40px / 2)
+  --md-popup-title-bar-font-size-describe: var(--md-font-body-large)
+  --md-popup-title-bar-color-title: var(--md-color-text-base)
+  --md-popup-title-bar-color-describe: var(--md-color-text-caption)
+  --md-popup-title-bar-color-button-left: var(--md-color-text-minor)
+  --md-popup-title-bar-color-button-right: var(--md-color-text-highlight)
+  --md-popup-mask-bg: var(--md-color-mask)
+  --md-popup-zindex: 1000
+
+  ///radio
+  --md-radio-color: var(--md-color-text-highlight)
+
+  /// result-page
+  --md-result-page-image-size: calc(260px / 2)
+  --md-result-page-title-font-size: var(--md-font-caption-normal)
+  --md-result-page-describe-font-size: var(--md-font-body-large)
+  --md-result-page-title-color: var(--md-color-text-base)
+  --md-result-page-describe-color: var(--md-color-text-caption)
+
+  /// selector
+  --md-selector-disabled-opacity: .2
+  --md-selector-active-color: var(--md-color-primary)
+  --md-selector-zindex: 1102
+
+  /// stepper
+  --md-stepper-fill: var(--md-color-bg-base)
+  --md-stepper-disabled-opacity: var(--md-opacity-disabled)
+  --md-stepper-color: var(--md-color-text-base)
+  --md-stepper-font-size: var(--md-font-body-large)
+  --md-stepper-input-font-size: var(--md-font-body-normal)
+  --md-stepper-height: calc(50px / 2)
+  --md-stepper-width-button: calc(54px / 2)
+  --md-stepper-width-input: calc(68px / 2)
+  --md-stepper-radius-button: calc(2px / 2)
+  --md-stepper-radius-input: 0
+
+  /// steps
+  --md-steps-color: var(--md-color-border-base)
+  --md-steps-color-active: var(--md-color-primary)
+  --md-steps-border-size: calc(1px / 2)
+  --md-steps-icon-size: calc(32px / 2) // icon size
+  --md-steps-text-color: var(--md-color-text-body)
+  --md-steps-text-font-size: var(--md-font-body-large)
+  --md-steps-text-gap-horizontal: calc(20px / 2)
+  --md-steps-text-gap-vertical: calc(40px / 2)
+  --md-steps-desc-color: var(--md-color-text-caption)
+  --md-steps-desc-font-size: var(--md-font-body-normal)
+  --md-steps-transition-delay: .15s
+
+  /// switch
+  --md-switch-fill: var(--md-color-primary)
+  --md-switch-fill-inverse: var(--md-color-bg-disabled)
+  --md-switch-handle-color: #FFF
+  --md-switch-item-color-disabled: var(--md-opacity-disabled)
+
+  /// swiper
+  --md-swiper-indicator-fill: var(--md-color-primary)
+
+  /// tabs
+  --md-tab-font-size: var(--md-font-body-large)
+  --md-tab-font-weight: var(--md-font-weight-medium)
+  --md-tab-text-color: var(--md-color-text-minor)
+  --md-tab-active-color: var(--md-color-primary)
+  --md-tab-disabled-color: var(--md-color-text-disabled)
+  --md-tab-bg: var(--md-color-bg-base)
+  --md-tab-height: calc(100px / 2)
+  --md-tab-ink-height: calc(4px / 2)
+  --md-tab-offset: var(--md-h-gap-sl)
+  --md-tab-item-gap: calc(27px / 2)
+
+  /// tab-picker
+  --md-tab-picker-height: calc(500px / 2)
+  --md-tab-picker-h-gap: var(--md-h-gap-sl)
+  --md-tab-picker-bg: var(--md-color-bg-inverse)
+  --md-tab-picker-zindex: 1102
+
+  /// tag
+  --md-tag-color: var(--md-color-primary)
+  --md-tag-fillet-radius: calc(4px / 2)
+  --md-tag-large-font-size: var(--md-font-body-normal)
+  --md-tag-small-font-size: var(--md-font-minor-normal)
+  --md-tag-tiny-font-size: calc(12px / 2)
+
+  /// tip
+  --md-tip-fill: #41485D
+  --md-tip-fill-opacity: .8
+  --md-tip-font-size: var(--md-font-minor-large)
+  --md-tip-color: var(--md-color-text-base-inverse)
+  --md-tip-radius: calc(1000px / 2)
+  --md-tip-padding: calc(15px / 2) calc(32px / 2)
+  --md-tip-close-size: calc(32px / 2)
+  --md-tip-shadow: 0 calc(5px / 2) calc(20px / 2) rgba(0, 0, 0, .08)
+  --md-tip-zindex: 1303
+
+  /// toast
+  --md-toast-fill: rgba(65, 72, 93, .77)
+  --md-toast-font-size: var(--md-font-body-large)
+  --md-toast-color: #fff
+  --md-toast-radius: var(--md-radius-normal)
+  --md-toast-padding: calc(20px / 2) calc(30px / 2)
+  --md-toast-zindex: 1700
