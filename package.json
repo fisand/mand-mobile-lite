@@ -1,17 +1,17 @@
 {
   "name": "@fisand/mand-mobile",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
-  "main": "components/index.js",
-  "module": "components/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "build:lib": "unbuild",
+    "build:lib": "tsx scripts/build.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
-    "./components",
+    "./dist",
     "./types"
   ],
   "keywords": [],
@@ -19,8 +19,11 @@
   "license": "ISC",
   "devDependencies": {
     "@types/fs-extra": "^11.0.1",
+    "@types/klaw-sync": "^6.0.1",
     "@vitejs/plugin-vue2": "^2.2.0",
     "fs-extra": "^11.1.0",
+    "klaw-sync": "^6.0.0",
+    "ora": "^6.1.2",
     "stylus": "^0.59.0",
     "tsx": "^3.12.3",
     "unbuild": "^1.1.2",
