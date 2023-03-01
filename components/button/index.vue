@@ -8,7 +8,7 @@
       inline ? 'inline' : 'block',
       round ? 'round' : '',
       plain ? 'plain' : '',
-      size === 'small' ? 'small' : ''
+      size === 'small' ? 'small' : '',
     ]"
     :disabled="inactive || type === 'disabled'"
     v-on="$listeners"
@@ -27,10 +27,12 @@
   </button>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent, PropType } from 'vue'
 import ActivityIndicatorRolling from '../activity-indicator/roller.vue'
 import Icon from '../icon/index.vue'
-export default {
+
+export default defineComponent({
   name: 'md-button',
 
   components: {
@@ -40,11 +42,11 @@ export default {
 
   props: {
     type: {
-      type: String,
-      default: 'default', // default, primary, warning, disabled, link
+      type: String as PropType<'default' | 'primary' | 'warning' | 'disabled' | 'link'>,
+      default: 'default',
     },
     nativeType: {
-      type: String,
+      type: String as PropType<'button' | 'submit' | 'reset' | undefined>,
       default: 'button',
     },
     icon: {
@@ -80,8 +82,7 @@ export default {
       default: false,
     },
   },
-}
-
+})
 </script>
 
 <style lang="stylus">

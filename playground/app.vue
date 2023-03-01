@@ -20,7 +20,7 @@ const showHandler = () => {
     <Button type="primary" @click="handleClick">Click</Button>
 
     <Button type="primary" plain @click="showHandler">Show Popup</Button>
-    <Popup v-model="show" position="center">
+    <Popup v-model="show" position="bottom">
       <div class="bg-#fff py-4 px-8 text-base">弹窗内容</div>
     </Popup>
   </div>

@@ -57,14 +57,6 @@ export default {
 </script>
 
 <style lang="stylus">
-@font-face {
-    font-family: Mand-Mobile-Icon;
-    font-style: normal;
-    font-weight: normal;
-    src url(https://manhattan.didistatic.com/static/manhattan/mand-mobile/icon/2.1.0/iconfont.woff) format("woff"),url(https://manhattan.didistatic.com/static/manhattan/mand-mobile/icon/2.1.0/iconfont.ttf) format("truetype")
-}
-
-
 .md-icon
   background-size contain
   fill currentColor
