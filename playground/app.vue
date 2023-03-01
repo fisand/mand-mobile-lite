@@ -1,8 +1,6 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
-import Toast from '../components/toast/index'
-import Button from '../components/button/index.vue'
-import Popup from '../components/popup/index.vue'
+import { Toast, Button, Popup } from '../components'
 
 function handleClick() {
   Toast.succeed('Click')

@@ -36,9 +36,10 @@
   </md-check-group>
 </template>
 
-<script>import Check from './index'
-import CheckGroup from './group'
-import CellItem from '../cell-item'
+<script>
+import Check from './index.vue'
+import CheckGroup from './group.vue'
+import CellItem from '../cell-item/index.vue'
 import checkMixin from './mixin'
 
 export default {
@@ -94,7 +95,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-check-item

@@ -5,7 +5,8 @@ import { resolve } from 'path'
 
 export default defineConfig({
   define: {
-    'process.env.MAND_ENV': JSON.stringify('')
+    'process.env.MAND_ENV': JSON.stringify(''),
+    'MAN_VERSION': JSON.stringify('0.0.4'),
   },
   plugins: [Vue(), Unocss()],
   css: {
