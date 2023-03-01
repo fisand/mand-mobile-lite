@@ -2,12 +2,12 @@
   "name": "@fisand/mand-mobile",
   "version": "0.0.1",
   "description": "",
-  "main": "dist/index.mjs",
-  "module": "dist/index.mjs",
+  "main": "components/index.js",
+  "module": "components/index.js",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "build:lib": "unbuild && tsx scripts/afterBuild",
+    "build:lib": "unbuild",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
